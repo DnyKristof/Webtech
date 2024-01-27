@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  react:
+    container_name: c-backend
+    build: .
+    restart: always
+    ports:
+      - "7001:80"
+    networks:
+      - network1
+networks:
+    network1:
+      name: examgen
+      external: true

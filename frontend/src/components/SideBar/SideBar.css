@@ -1,0 +1,111 @@
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar {
+
+  width: 200px;
+  border-right: 1px solid #000000;
+  margin-left: 20px;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.active-user {
+  width: 200px;
+  border-right: 1px solid #000000;
+  margin-left: 40px;
+  height: 10vh;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+}
+
+.sidebar button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar button:hover {
+  background-color: rgb(82, 82, 255);
+  border-radius: 5px;
+  color: white;
+}
+
+.sidebar .active button {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.sidebar .login-button {
+  margin-bottom: 50px;
+  padding: 15px 25px;
+  border-radius: 205px;
+  border: 1px solid;
+  border-color: rgb(82, 82, 255);
+
+  color: rgb(82, 82, 255);
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .login-button:hover {
+  background-color: rgb(82, 82, 255);
+  border-radius: 25px;
+}
+
+
+
+@keyframes flicker {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+}
+
+
+.fire-button-active button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #ff5733;
+  box-shadow: 0 0 20px 5px #ff5733;
+  
+
+  animation: flicker 1s infinite;
+}
+
+.fire-button-active button:hover {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #ff5733;
+  box-shadow: 0 0 20px 5px #ff5733;
+
+
+  animation: flicker 1s infinite;
+}

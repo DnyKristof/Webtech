@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+
+  padding-left: 20px;
+}
+
+.main-content {
+  flex-grow: 1;
+}

@@ -1,0 +1,123 @@
+.blog-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.posts-container {
+  display: flex;
+  width: 100%;
+}
+
+.available-posts {
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  min-width: 200px;
+}
+
+.available-posts button {
+  margin-top: 30px;
+  padding: 10px;
+  width: 80%;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  border: rgb(82, 82, 255) solid 1px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  transition: background-color 0.4s, color 0.4s;
+
+}
+
+@keyframes tiltAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-1deg);
+  }
+
+  100% {
+    transform: rotate(1deg);
+  }
+}
+
+.available-posts button:hover {
+  background-color: rgb(82, 82, 255);
+  color: white;
+  border-radius: 10px;
+  animation: tiltAnimation 1s ease-in-out infinite alternate;
+
+}
+
+.divider {
+  border-left: 1px solid #ccc;
+  margin: 0 20px;
+  height: 100vh;
+}
+
+.selected-post {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+
+}
+
+.post-list li {
+  max-width: 200px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.post-list li:hover {
+  background-color: #e5e5e5;
+  cursor: pointer;
+}
+.available-posts ul{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+
+.post-list h2,
+p {
+  margin-left: 0px;
+}
+
+.selected-post h2 {
+  margin-left: 0px;
+}
+
+.post-list .date-user-container {
+  display: flex;
+  gap : 37px;
+  max-width: 200px;
+}
+
+.post-list .date-user-container p {
+  font-size: 13px;
+  color: #a0a0a0;
+  margin: 0;
+}
+.time-p{
+  font-size: 13px;
+  color: #a0a0a0;
+  margin: 0;
+}

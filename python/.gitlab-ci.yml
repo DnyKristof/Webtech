@@ -1,0 +1,13 @@
+stages:
+  - api
+
+examgen-api:
+  stage: api
+  tags:
+    - backend
+  script:
+    - sudo docker compose -f /srv/examgen/backend/docker-compose.yaml down
+    - sudo docker compose -f /srv/examgen/backend/docker-compose.yaml up -d --build
+  only:
+    changes:
+    - "**/*.{py}"

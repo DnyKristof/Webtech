@@ -1,0 +1,8 @@
+[init]
+	defaultBranch = none
+[fetch]
+	recurseSubmodules = false
+[transfer]
+	bundleURI = true
+[http "https://gitlab.com"]
+	sslCAInfo = /srv/examgen/backend/builds/y6j5i-yzb/0/kittof/examgen.tmp/CI_SERVER_TLS_CA_FILE
