@@ -51,7 +51,7 @@ const SideBar = () => {
               <LoginButton />
             }
           </li>
-	  <li className={activeButton === '' ? 'active' : 'none'}>
+	  {/*<li className={activeButton === '' ? 'active' : 'none'}>
             <button onClick={() => handleButtonClick('')}>Home</button>
           </li>
           <li className={activeButton === 'Blog' ? 'active' : 'none'}>
@@ -59,7 +59,7 @@ const SideBar = () => {
           </li>
           <li className={activeButton === 'Dictionary' ? 'active' : 'none'}>
             <button onClick={() => handleButtonClick('Dictionary')}>Dictionary</button>
-          </li>
+          </li>*/}
           <li className={activeButton === 'Fyralath' ? 'fire-button-active' : 'none'}>
             <button onClick={() => handleButtonClick('Fyralath')}>Fyralath</button>
           </li>

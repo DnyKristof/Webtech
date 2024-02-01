@@ -25,16 +25,16 @@ function App() {
         <SideBar className="sidebar" />
         <div className="main-content">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Fyralath/>} />
             <Route path="/login" element={isLoggedIn() ?
               <p>You are already logged in.</p> :
               <Login />
             } />
             <Route path="/register" element={<Register />} />
-            <Route path="/blog" element={<Blog />} />
+            {/*<Route path="/blog" element={<Blog />} />
             <Route path="/dictionary" element={<Dictionary />} />
             <Route path="/blog/addpost" element={<AddPost />} />
-            <Route path="/dictionary/add" element={<AddDictionary />} />
+          <Route path="/dictionary/add" element={<AddDictionary />} />*/}
             <Route path="/fyralath" element={<Fyralath/>}/>
           </Routes>
         </div>

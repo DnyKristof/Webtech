@@ -14,12 +14,18 @@ function LineChart({ chartData }) {
               text: "Price",
             },
             legend: {
-              display: false
-            }
-          }
+              display: false,
+            },
+          },
+          elements: {
+            point: {
+              radius: 0, 
+            },
+          },
         }}
       />
     </div>
   );
 }
+
 export default LineChart;

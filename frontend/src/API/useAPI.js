@@ -1,6 +1,6 @@
 import axios from "axios";
 
-let baseURL = "https://examgen.pro/api/";
+let baseURL = "https://myscopes.org/api/";
 
 export function isLoggedIn() {
   return localStorage.getItem("user") !== null;
@@ -150,8 +150,10 @@ export async function postDictionary(english, hungarian, field) {
   }
 }
 
+let baseURL2 = "https://myscopes.org/api2/";
+
 export async function getFyralath() {
-  const endpoint = "https://examgen.pro/api2/axe";
+  const endpoint = baseURL2 + "axe";
 
   try {
     const response = await axios.get(endpoint);
@@ -164,7 +166,7 @@ export async function getFyralath() {
 }
 
 export async function getFyralathChart() {
-  const endpoint = "https://examgen.pro/api2/axe/chart";
+  const endpoint = baseURL2 + "/axe/chart";
 
   try {
     const response = await axios.get(endpoint);
