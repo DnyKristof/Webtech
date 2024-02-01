@@ -11,6 +11,10 @@ services:
     networks:
       - network1
     restart: always
+    volumes:
+      - ./mongodb-data:/data/db
+
+
   mongo-express:
     image: mongo-express:0.54.0
     restart: always

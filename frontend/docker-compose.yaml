@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   react:
-    container_name: frontend
+    container_name: myscope-frontend
     build: .
     restart: always
     ports:
