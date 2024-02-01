@@ -1,6 +1,6 @@
 version: "3.7"
 services:
-  react:
+  myscope_react:
     container_name: myscope-frontend
     build: .
     restart: always
