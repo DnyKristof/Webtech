@@ -5,3 +5,4 @@ services:
     image: cloudflare/cloudflared:latest
     container_name: myscope-tunnel
     command: tunnel --no-autoupdate run --token eyJhIjoiYzgyYjQxN2MzZDdiOTE0NDQzNTRhMGE5MWVmZjAyMjEiLCJ0IjoiMWJhMjhiNTQtMDJhZS00OWEwLThmYjItZTZmMzdhNzM0ZTMzIiwicyI6Ik5HWTJNbVpsTmpjdE16YzBPQzAwTXpnMExXSXlPVGN0WldWaU9UUTVaamhoTVRKbCJ9
+    restart: always
