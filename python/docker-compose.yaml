@@ -10,7 +10,7 @@ services:
       - network1
     restart: always
     volumes:
-      - /srv/examgen/backend/volume:/src/src/data
+      - /srv/Webtech/python/volume:/src/src/data
 networks:
   network1:
     external: true
