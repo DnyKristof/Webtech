@@ -87,9 +87,6 @@ def updatePrice():
 
     mongo.get_collection("axe").insert_one(Fyralath_dataDB)
     
-    webhook_url = "https://discord.com/api/webhooks/1104503857381384252/PXiU0uw3k35Rl75VsAcYcxH8BdK7cwtZwXycAlzB-XZhyT6eNLem9urSchvmF5ImSxoi"  # Replace with your Discord webhook URL
-    data = {"content": "Sky is still a cock."}
-    requests.post(webhook_url, data=data)
     
     return Fyralath_data
 
@@ -110,7 +107,3 @@ def getChartData():
         data.append(processed_record)
 
     return data
-
-if __name__ == "__main__":
-    
-    print(getChartData())
